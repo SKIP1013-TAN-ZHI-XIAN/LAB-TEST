@@ -1,0 +1,56 @@
+package labTest1;
+
+import java.util.Scanner;
+
+class Question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int hours;
+		double sales, comission, comission1, wages, daily1, money = 5;
+		
+		System.out.print("---WELCOME TO PHONE KIOSK--- ");
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println();
+		
+		System.out.print("\nEnter sales        : RM ");
+		sales = input.nextDouble();
+		
+		System.out.print("Enter hours worked : ");
+		hours = input.nextInt();
+		
+		System.out.println();
+		
+		if (sales >= 150.00 && sales <= 300.00) {
+			comission = 0.05;
+			comission1 = sales * comission;
+			System.out.printf("Comission          : RM %.2f", comission1);
+			wages = hours * money;
+			daily1 = wages + comission1;
+			System.out.printf("\nDaily wages        : RM %.2f", daily1);
+		} else if(sales >= 301.00 && sales <= 500.00) {
+			comission = 0.10;
+			comission1 = sales * comission;
+			System.out.printf("Comission          : RM %.2f", comission1);
+			wages = hours * money;
+			daily1 = wages + comission1;
+			System.out.printf("\nDaily wages        : RM %.2f", daily1);
+		} else if( sales > 50.00) {
+			comission = 0.15;
+			comission1 = sales * comission;
+			System.out.printf("Comission          : RM %.2f", comission1);
+			wages = hours * money;
+			daily1 = wages + comission1;
+			System.out.printf("\nDaily wages        : RM %.2f", daily1);
+		} else {
+			comission = 0;
+			comission1 = sales * comission;
+			System.out.printf("Comission          : RM %.2f", comission1);
+			wages = hours * money;
+			daily1 = wages + comission1;
+			System.out.printf("\nDaily wages        : RM %.2f", daily1);
+		}
+	}
+
+}
