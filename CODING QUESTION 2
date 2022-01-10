@@ -29,14 +29,14 @@ class Question2 {
 			wages = hours * money;
 			daily1 = wages + comission1;
 			System.out.printf("\nDaily wages        : RM %.2f", daily1);
-		} else if(sales >= 301.00 && sales <= 500.00) {
+		} else if (sales >= 301.00 && sales <= 500.00) {
 			comission = 0.10;
 			comission1 = sales * comission;
 			System.out.printf("Comission          : RM %.2f", comission1);
 			wages = hours * money;
 			daily1 = wages + comission1;
 			System.out.printf("\nDaily wages        : RM %.2f", daily1);
-		} else if( sales > 50.00) {
+		} else if ( sales > 50.00) {
 			comission = 0.15;
 			comission1 = sales * comission;
 			System.out.printf("Comission          : RM %.2f", comission1);
