@@ -22,7 +22,7 @@ class Question1 {
 		item = scanMe.nextInt();
 		
 		if (item <= 3) {
-			System.out.print("Enter price of first item : " + "RM ");
+			System.out.print("Enter price of first item : " + "RM");
 			price1 = scanMe.nextDouble();
 		
 			System.out.print("Enter quantity of first item : ");
@@ -30,7 +30,7 @@ class Question1 {
 		
 			System.out.println();
 		
-			System.out.print("Enter price of second item : " + "RM ");
+			System.out.print("Enter price of second item : " + "RM");
 			price2 = scanMe.nextDouble();
 		
 			System.out.print("Enter quantity of second item : ");
@@ -38,7 +38,7 @@ class Question1 {
 		
 			System.out.println();
 		
-			System.out.print("Enter price of third item : " + "RM ");
+			System.out.print("Enter price of third item : " + "RM");
 			price3 = scanMe.nextDouble();
 
 			System.out.print("Enter quantity of first item : ");
@@ -54,15 +54,15 @@ class Question1 {
 			if (sum1 >= 100) {  
 				discount = (discountRate2 * sum1);
 				pricePaid = sum1 - discount;
-				System.out.printf("Total price       : RM %.2f", sum1);
-				System.out.printf("\nDiscount received : RM %.2f", discount);
-				System.out.printf("\nPrice to be paid  : RM %.2f", pricePaid);
+				System.out.printf("Total price       : RM%.2f", sum1);
+				System.out.printf("\nDiscount received : RM%.2f", discount);
+				System.out.printf("\nPrice to be paid  : RM%.2f", pricePaid);
 			} else {  // (sum <= 100)
 				discount = (discountRate1 * sum1);  
 				pricePaid = sum1 - discount;
-				System.out.printf("Total price       : RM %.2f", sum1);
-				System.out.printf("\nDiscount received : RM %.2f", discount);
-				System.out.printf("\nPrice to be paid  : RM %.2f", pricePaid);
+				System.out.printf("Total price       : RM%.2f", sum1);
+				System.out.printf("\nDiscount received : RM%.2f", discount);
+				System.out.printf("\nPrice to be paid  : RM%.2f", pricePaid);
 			}
 	       
 	    	} else {
