@@ -1,0 +1,73 @@
+package labTest1;
+
+import java.util.Scanner;
+
+class Question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int item;
+		int number1, number2, number3;
+		double price1, price2, price3;
+		double firstTotalPrice, secondTotalPrice, thirdTotalPrice;
+		double discount, discountRate1 = 0.1, discountRate2 = 0.2;
+		double sum1, pricePaid;
+		
+		System.out.print("---WELCOME TO C_MARTS SHOPPING COMPLEX---");
+		Scanner scanMe = new Scanner(System.in); 
+		
+		System.out.println();
+		
+		System.out.print("\nEnter the number of items : ");
+		item = scanMe.nextInt();
+		
+		if (item <= 3) {
+			System.out.print("Enter price of first item : " + "RM ");
+			price1 = scanMe.nextDouble();
+		
+			System.out.print("Enter quantity of first item : ");
+			number1 = scanMe.nextInt();
+		
+			System.out.println();
+		
+			System.out.print("Enter price of second item : " + "RM ");
+			price2 = scanMe.nextDouble();
+		
+			System.out.print("Enter quantity of second item : ");
+			number2 = scanMe.nextInt();
+		
+			System.out.println();
+		
+			System.out.print("Enter price of third item : " + "RM ");
+			price3 = scanMe.nextDouble();
+
+			System.out.print("Enter quantity of first item : ");
+			number3 = scanMe.nextInt();
+		
+			System.out.println();
+		
+			firstTotalPrice = price1 * number1; 
+			secondTotalPrice = price2 * number2; 
+			thirdTotalPrice = price3 * number3; 
+			sum1 = firstTotalPrice + secondTotalPrice + thirdTotalPrice;
+			
+			if (sum1 >= 100) {  
+				discount = (discountRate2 * sum1);
+				pricePaid = sum1 - discount;
+				System.out.printf("Total price       : RM %.2f", sum1);
+				System.out.printf("\nDiscount received : RM %.2f", discount);
+				System.out.printf("\nPrice to be paid  : RM %.2f", pricePaid);
+			} else {  // (sum <= 100)
+				discount = (discountRate1 * sum1);  
+				pricePaid = sum1 - discount;
+				System.out.printf("Total price       : RM %.2f", sum1);
+				System.out.printf("\nDiscount received : RM %.2f", discount);
+				System.out.printf("\nPrice to be paid  : RM %.2f", pricePaid);
+			}
+	       
+	    } else {
+	    	System.out.print("Sorry! Your maximum number of items are more than 3.");
+	    }
+	}
+
+}
