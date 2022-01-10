@@ -65,9 +65,9 @@ class Question1 {
 				System.out.printf("\nPrice to be paid  : RM %.2f", pricePaid);
 			}
 	       
-	    } else {
-	    	System.out.print("Sorry! Your maximum number of items are more than 3.");
-	    }
+	    	} else {
+	    		System.out.print("Sorry! Your maximum number of items are more than 3.");
+	    	}
 	}
 
 }
