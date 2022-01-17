@@ -1,0 +1,31 @@
+package labTest2;
+
+import java.util.Scanner;
+
+class Q2CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double radius, height, surfaceArea, baseArea, volume;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter the radius of the cylinder : ");
+		radius = input.nextDouble();
+		
+		System.out.print("Enter the height of the cylinder : ");
+		height = input.nextDouble();
+		
+		System.out.println("\n---CYLINDER---");
+		
+		baseArea = Math.PI * radius * radius;
+		System.out.printf("\nBase area is : %.2f cm", baseArea);
+		
+		surfaceArea = 2.0 * Math.PI * radius + 2.0 * baseArea;
+		System.out.printf("\nSurface area is : %.2f cm", surfaceArea);
+		
+		volume = baseArea * height;
+		System.out.printf("\nVolume is : %.2f cm", volume);
+	}
+
+}
